@@ -6,25 +6,45 @@
   font-family: Arial, sans-serif;
 }
 
+body{
+  padding-top: 40px;
+}
+
 /* ===== Common Container ===== */
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
+  /* background-color: burlywood; */
 }
 
 /* ===== HEADER ===== */
 .header {
-  background: #f70404;
+  
+background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: #fff;
-  position: relative;
+  height: 60px;
+  border-radius: 10px;
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+   width: 90%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  transition: top 0.4s ease;
+
+
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between; /* space-between as you wanted */
+  justify-content: space-around; /* space-between as you wanted */
   align-items: center;
-  height: 70px;
+  height: 60px;
+  /* background-color: yellow; */
 }
 
 /* Logo */
@@ -36,7 +56,7 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .nav-links a {
@@ -59,28 +79,21 @@
   background: #fff;
 }
 
-/* ===== Mobile Menu ===== */
-/* .mobile-menu {
-  display: none;
-  height: 80vh;
-  width: 100%;
 
-  background: rgba(0, 0, 0, 0.014);
-} */
 
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 290px;
+  position: fixed; 
+  top: 3.7rem; 
+   left: -0;
+  width: 100%;
   height: 100vh;
   background: #222;
 
   /* Start hidden (left side) */
-  transform: translatex(-100%);
-  transition: transform 1.2s ease;
+  transform: translatex(-110%);
+  transition: transform 1.5s ease;
 
-  z-index: 999;
+  z-index: 9999999999;
 }
 
 /* Jab active ho */

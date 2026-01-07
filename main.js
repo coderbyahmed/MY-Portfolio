@@ -31,3 +31,17 @@ cards.forEach(card => {
     card.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+// ===== Header scroll behavior =====
+
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.header');
+
+  if (window.scrollY > 20) {
+    // Scroll hone par top ko 0 px kar do
+    header.style.top = '0';
+  } else {
+    // Page top pe fir se thoda niche dikhe
+    header.style.top = '5px';
+  }
+});
