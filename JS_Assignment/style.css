@@ -65,6 +65,12 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
   gap: 50px;
 }
 
+.nav-links button  {
+  height: 100px;
+  width: 100px;
+ border: 1px solid black;
+}
+
 .nav-links a {
   text-decoration: none;
   color: white;
@@ -216,6 +222,7 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
 .card-buttons {
   display: flex;
   justify-content: center;
+  gap: 20px;
   
 }
 

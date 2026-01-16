@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+ 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,15 +13,19 @@
       <div class="container header-container">
         <!-- Left: Logo / Heading -->
         <div class="logo">
-          <h1>My Portfolio</h1>
+          <h1>Js Assignments</h1>
         </div>
 
         <!-- Center: Navigation Links -->
         <nav class="nav">
           <ul class="nav-links">
-            <li><a href="./Html_Assignments/index.html">HTML</a></li>
-            <li><a href="./CSS_Assignment/index.html">CSS</a></li>
-            <li><a href="./JS_Assignment/index.html">JavaScript</a></li>
+            <li>
+              <a href="../index.html">go back</a>
+               
+              
+            </li>
+            <!-- <li><a href="#css-card" data-target="css">CSS</a></li>
+            <li><a href="#js-card" data-target="javascript">JavaScript</a></li> -->
           </ul>
         </nav>
 
@@ -35,19 +40,23 @@
       <!-- Mobile Menu (hidden by default) -->
       <div class="mobile-menu">
         <ul>
-          <li><a href="./Html_Assignments/index.html">HTML</a></li>
-            <li><a href="./CSS_Assignment/index.html">CSS</a></li>
-          <li><a href="./JS_Assignment/index.html">JavaScript</a></li>
+          <li><a href="#html-card" data-target="html">HTML</a></li>
+          <li><a href="#css-card" data-target="css">CSS</a></li>
+          <li><a href="#js-card" data-target="javascript">JavaScript</a></li>
         </ul>
       </div>
     </header>
 
-           <!-- ===== MAIN CONTENT ===== -->
-    <main>                                 <!-- Start of main content -->
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+      <!-- Start of main content -->
       <!-- Cards Section -->
-      <section class="cards-section">      <!--ye section cards ka hai -->
-        <div class="container">            <!--ye div container hai cards ka -->
-          <div class="cards-wrapper">      <!-- star of cards-wrapper --> 
+      <section class="cards-section">
+        <!--ye section cards ka hai -->
+        <div class="container">
+          <!--ye div container hai cards ka -->
+          <div class="cards-wrapper">
+            <!-- star of cards-wrapper -->
             <!-- HTML Card -->
             <div class="card" id="html-card" data-card="html">
               <div class="card-image">
@@ -55,11 +64,11 @@
               </div>
 
               <div class="card-content">
-                <h2>HTML</h2>
+                <!-- <h2>HTML</h2> -->
 
                 <div class="card-buttons">
-                 <a href="./Html_Assignments/index.html"> <button type="button">Go to View</button></a>
-                  <!-- <button type="button">Live Demo</button> -->
+                  <a href=""> <button type="button">view Code</button></a>
+                  <a href=""> <button type="button">Live Demo</button></a>
                 </div>
               </div>
             </div>
@@ -71,11 +80,11 @@
               </div>
 
               <div class="card-content">
-                <h2>CSS</h2>
+                <!-- <h2>CSS</h2> -->
 
                 <div class="card-buttons">
-                 <a href="./CSS_Assignment/index.html"> <button type="button">Go to View</button></a>
-                  <!-- <button type="button">Live Demo</button> -->
+                  <a href=""><button type="button">view Code</button></a>
+                  <a href=""><button type="button">Live Demo</button></a>
                 </div>
               </div>
             </div>
@@ -87,23 +96,26 @@
               </div>
 
               <div class="card-content">
-                <h2>JavaScript</h2>
+                <!-- <h2>JavaScript</h2> -->
 
                 <div class="card-buttons">
-                 <a href="./JS_Assignment/index.html"> <button type="button">Got to View</button></a>
-                  <!-- <button type="button">Live Demo</button> -->
+                  <a href=""><button type="button">view Code</button></a>
+                  <a href=""><button type="button">Live Demo</button></a>
                 </div>
               </div>
             </div>
-
-
-
-           
-          </div>                <!-- End of cards-wrapper --> <!--is div ke andar mery cards hain -->
-        </div>                  <!-- End of container --> <!--ye div container hai cards ka -->
-      </section>                <!-- End of cards-section --> <!--ye section cards ka hai -->
-    </main>                     <!-- End of main content --> <!--ye main content ka end hai -->
+          </div>
+          <!-- End of cards-wrapper -->
+          <!--is div ke andar mery cards hain -->
+        </div>
+        <!-- End of container -->
+        <!--ye div container hai cards ka -->
+      </section>
+      <!-- End of cards-section -->
+      <!--ye section cards ka hai -->
+    </main>
+    <!-- End of main content -->
+    <!--ye main content ka end hai -->
     <script src="./main.js"></script>
   </body>
-  
 </html>
